@@ -1,0 +1,13 @@
+--- 
+- running: true
+  off_message: The car is running!!!
+  id: 1
+  on_message: The car is not running.
+- running: true
+  off_message: The car is running!!!
+  id: 2
+  on_message: The car is not running.
+- running: true
+  off_message: The car is running!!!
+  id: 3
+  on_message: The car is BURNED DOWN AND NOT RUNNING.

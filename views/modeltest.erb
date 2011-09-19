@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Backbone Model Test</title>
+	<script type="text/javascript" src="javascripts/jquery.js"></script>
+	<script type="text/javascript" src="javascripts/json2.js"></script>
+	<script type="text/javascript" src="javascripts/underscore.js"></script>
+	<script type="text/javascript" src="javascripts/backbone.js"></script>
+	<style type="text/css" media="screen">
+		.car {
+			background-color: whiteSmoke;
+			padding: 20px;
+			font-size: 20px;
+			font-family: Helvetica;
+			color: #202020;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	
+	<% @cars.each do |car| %>
+		
+		<div class="car" id="car<%= car.id %>">
+			<span><%= car.on_message %></span>
+			<a href="#">Toggle</a>
+		</div>
+	<% end %>
+	
+	<script type="text/javascript" src="javascripts/seo-model-test.js"></script>
+	
+	<script type="text/javascript">
+		<% @cars.each do |car| %>
+			cars.add(<%= car.to_json %>);
+		<% end %>
+	</script>
+
+</body>
+</html>
