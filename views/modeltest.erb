@@ -29,6 +29,15 @@
 	<script type="text/javascript" src="javascripts/seo-model-test.js"></script>
 	
 	<script type="text/javascript">
+	
+		/*
+			Best way?
+			
+			<%= @cars
+			
+		*/
+	
+	
 		<% @cars.each do |car| %>
 			cars.add(<%= car.to_json %>);
 		<% end %>
