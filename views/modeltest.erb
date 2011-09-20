@@ -19,7 +19,6 @@
 <body>
 	
 	<% @cars.each do |car| %>
-		
 		<div class="car" id="car<%= car.id %>">
 			<span><%= car.on_message %></span>
 			<a href="#">Toggle</a>
@@ -32,11 +31,7 @@
 	
 		/*
 			Best way?
-			
-			<%= @cars
-			
 		*/
-	
 	
 		<% @cars.each do |car| %>
 			cars.add(<%= car.to_json %>);

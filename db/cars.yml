@@ -1,13 +1,13 @@
 --- 
 - running: true
-  off_message: The car is running!!!
+  off_message: The car is not running!!!
   id: 1
-  on_message: The car is not running.
+  on_message: The car is running.
 - running: true
-  off_message: The car is running!!!
+  off_message: The car is not running!!!
   id: 2
-  on_message: The car is not running.
+  on_message: The car is running.
 - running: true
-  off_message: The car is running!!!
+  off_message: The car is not running!!!
   id: 3
-  on_message: The car is BURNED DOWN AND NOT RUNNING.
+  on_message: The car is running VERY FAST.
